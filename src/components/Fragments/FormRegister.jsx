@@ -1,7 +1,17 @@
+
+import Inputform from "../Elements/Input/Input";
+import Button from "../Elements/Button/Button";
+
 const FormRegister = (props) => {
 
     return (
         <form action="">
+           <Inputform
+          children="nama"
+          type="text"
+          name="email"
+          placeholder="Enter your name"
+          />
         <Inputform
           children="Email"
           type="mail"
@@ -13,19 +23,21 @@ const FormRegister = (props) => {
           children="Password"
           type="password"
           name="password"
-          placeholder="password"
+          placeholder="Password"
           />
 
           <Inputform
     
-          children="Confirm Password"
+          children="password"
           type="password"
           name="password"
-          placeholder="password"
+          placeholder="Confirm Password"
           />
-          <Button classname="bg-slate-100 w-full" textCl="text-white">
+          <Button classname="bg-yellow-500 w-full" textCl="text-white">
             Login
           </Button> </form>
 
     )
 }
+
+export default FormRegister;
